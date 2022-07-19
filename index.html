@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bt_JS_buoi2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <h1> Đây là bài tập Javascrip buoi 2</h1>
+    <!-- bài tập 1 -->
+
+    <div class="container">
+        <div class="card w-50">
+            <div class="card-header bg-dark text-white">
+                <h2>Bài tập 1: Tính tiền lương nhân viên</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <p>Nhập vào đây số ngày làm</p>
+                    <input id="dayWord" class="form-control">
+                </div>
+                <div class="form-group">
+                    <p>Nhập vào đây tiền lương trên ngày</p>
+                    <input id="moneyDay" class="form-control">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button onclick="salaryMonth()" id="btnSalary" class="btn btn-warning">Enter</button>
+                <div class="aler alert-warning my-2 px-2 py-2">Tổng lương: 
+                    <span id="salary"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- bài tập 2 -->
+    <div class="container">
+        <div class="card w-50">
+            <div class="card-header bg-white text-dark">
+                <h2>Bài tập 2: Tính giá trị trung bình</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <p>Số thực thứ 1 là:</p>
+                    <input id="realNumber1" class="form-control" type="number" placeholder="số thực">
+                </div>
+                <div class="form-group">
+                    <p>Số thực thứ 2 là:</p>
+                    <input id="realNumber2" class="form-control" type="number" placeholder="số thực">
+                </div>
+                <div class="form-group">
+                    <p>Số thực thứ 3 là:</p>
+                    <input id="realNumber3" class="form-control" type="number" placeholder="số thực">
+                </div>
+                <div class="form-group">
+                    <p>Số thực thứ 4 là:</p>
+                    <input id="realNumber4" class="form-control" type="number" placeholder="số thực">
+                </div>
+                <div class="form-group">
+                    <p>Số thực thứ 5 là:</p>
+                    <input id="realNumber5" class="form-control" type="number" placeholder="số thực">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button onclick="totalAverage()" id="btnNumber" class="btn btn-success">Enter</button>
+                <div class="alert alert-success my-2 px-2 py-2">Giá trị trung bình: 
+                    <span id="average"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- bài tập 3 -->
+    <div class="container">
+        <div class="card w-50">
+            <div class="card-header bg-dark text-white">
+                <h2>Bài tập 3: Quy đổi tiền</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <p>Nhập số tiền(usd):
+                        <br><i>(Tỷ giá tiền hiện tại: 1usd = 23.500vnd)</i>
+                    </p>
+                    <input id="moneyUSD" class="form-control">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button onclick="exchangeRate()" id="btnRate" class="btn btn-danger">Enter</button>
+                <div class="aler alert-warning my-2 px-2 py-2">Quy đổi ra vnđ: 
+                    <span id="moneyVnd"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- bài tập 4 -->
+    <div class="container">
+        <div class="card w-50">
+            <div class="card-header bg-dark text-white">
+                <h2>Bài tập 4: Tính diện tích và chu vi</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <p>Chiều dài: </p>
+                    <input id="long" class="form-control">
+                </div>
+                <div class="form-group">
+                    <p>Chiều rộng:</p>
+                    <input id="width" class="form-control">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button onclick="rectangle()" id="btnRectangle" class="btn btn-success">Enter</button>
+                <div class="aler alert-danger my-2 px-2 py-2">Chu vi hình chữ nhật:
+                    <span id="perimeter"></span>
+                </div>
+                <div class="aler alert-warning my-2 px-2 py-2">Diện tích hình chữ nhật: 
+                    <span id="area"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- bài tập 5 -->
+    <div class="container">
+        <div class="card w-50">
+            <div class="card-header bg-dark text-white">
+                <h2>Bài tập 5: Tính tổng hai ký số</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <p>Nhập vào 1 số(có hai chữ số):</p>
+                    <input id="twoDigit" class="form-control">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button onclick="sumDigit()" id="btnSalary" class="btn btn-info">Enter</button>
+                <div class="aler alert-warning my-2 px-2 py-2">Tổng hai ký số:
+                    <span id="digit"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<hr>
+    <div class="container w-50">
+        <button onclick="tatDen()" id="btnTatDen" class="btn btn-secondary mx-2">Tat Den</button>
+        <img id="imgDen" src="./image/pic_bulboff.gif" alt="">
+        <button onclick="batDen()" id="btnBatDen" class="btn btn-warning mx-2">Bat Den</button>
+    </div>
+
+    <script src="./foder-baitap/bai1.js"></script>
+    <script src="./foder-baitap/bai2.js"></script>
+    <script src="./foder-baitap/bai3.js"></script>
+    <script src="./foder-baitap/bai4.js"></script>
+    <script src="./foder-baitap/bai5.js"></script>
+<script src="./foder-baitap/battatden.js"></script>      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
